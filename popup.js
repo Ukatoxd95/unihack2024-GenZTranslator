@@ -43,11 +43,10 @@ function translateText(text, toGenZ) {
         console.error('Error loading JSON file:', error);
     });
     
-    
 }
 
 function translateWebPage() {
-    //
+    //Redirects user to .com
     window.location.href = '.com';
 }
 
