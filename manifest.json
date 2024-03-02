@@ -11,7 +11,8 @@
   "permissions": [
     "contextMenus",
     "activeTab",
-    "storage"
+    "storage", 
+    "scripting"
   ],
   "action": {
     "default_icon": "/images/icon16.png",

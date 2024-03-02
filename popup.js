@@ -1,5 +1,12 @@
 let translateToGenZ = true; // Default direction
 
+chrome.storage.local.get("selectedText", (data) => {
+    const selectedText = data.selectedText;
+    if (selectedText) {
+        document.getElementById("englishText").value = selectedText;
+    }
+});
+
 document.getElementById('switchDirectionBtn').addEventListener('click', function() {
     let btn = document.getElementById('switchDirectionBtn');
     translateToGenZ = !translateToGenZ; // Correctly toggles the translation direction
