@@ -9,6 +9,7 @@
     "128": "/images/icon16.png"
   },
   "permissions": [
+    "contextMenus",
     "activeTab",
     "storage"
   ],
