@@ -3,12 +3,47 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.toggle {
+.toggle, .translator {
     margin: 10px;
 }
 
-#toggleTranslation {
-    width: 100%;
+
+
+#toggleTranslation, #translateBtn {
+    width: calc(100% - 20px);
     padding: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+#toggleTranslation:hover, #translateBtn:hover {
+    background-color: #45a049; /* Darker shade of green */
+}
+
+#sourceText {
+    width: calc(100% - 20px);
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    resize: none; /* Prevent resizing */
+}
+
+#translationResult {
+    padding: 10px;
+    background-color: #f1f1f1;
+    min-height: 50px;
+    margin: 10px 0; /* Adjusts margin around the translation result for consistency */
+    width: calc(100% - 20px); /* Adjust width to match the text box and button */
+    box-sizing: border-box; /* Ensures padding doesn't add to the total width/height */
 }
