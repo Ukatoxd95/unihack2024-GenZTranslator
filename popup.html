@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Translate Page</title>
+    <title>Translator</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <div class="translator">
-        <select id="languageSelect">
-            <option value="en">English</option> <!--We only need english-->
-        </select>
-        <button id="translatePageBtn">Translate Page</button>
+        <textarea id="sourceText" placeholder="Enter slang or phrase..."></textarea>
+        <button id="translateBtn">Translate</button>
+        <div id="translationResult"></div>
+    </div>
+    <hr>
+    <div class="toggle">
+        <button id="toggleTranslation">Toggle Webpage Translation</button>
     </div>
     <script src="popup.js"></script>
 </body>
