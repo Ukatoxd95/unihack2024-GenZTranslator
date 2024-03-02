@@ -53,15 +53,16 @@ function translateWebPage() {
 
 function translateEnglishToGenz(text, json) {
     //
-    let stringList = text.split(' ');
-    for (let i = 0; i < stringList.length; i++) {
-        let curr = stringList[i];
-        if (json[curr]){
-            stringList[i] = json[curr]
+    var newString = text.toLowerCase();
+    for (let key in json) {
+        if (newString.includes(key)){
+            newString = newString.replaceAll(key, json[key])
+            console.log(key)
         }
+        
     }
 
-    return stringList.join(' ')
+    return newString
 }
 
 function translateGenzToEnglish(text, json) {
