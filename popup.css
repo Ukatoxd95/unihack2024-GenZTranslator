@@ -1,0 +1,14 @@
+body, html {
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.toggle {
+    margin: 10px;
+}
+
+#toggleTranslation {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
