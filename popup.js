@@ -21,16 +21,49 @@ document.getElementById('translateWebPageBtn').addEventListener('click', functio
 });
 
 function translateText(text, toGenZ) {
-    if(toGenZ) {
-        // Translate from English to Gen Z
-        console.log("Translating to Gen Z:", text); // Implement
-    } else {
-        // Translate from Gen Z to English
-        console.log("Translating to English:", text); // Implement 
-    }
-    document.getElementById('translationResult').textContent = "Translated Text";
+    // Get json data
+    fetch('./wordtranslation.json')
+    .then(response => response.json())
+    .then(json => {
+        if (toGenZ) {
+            // Translate from English to Gen Z
+            // Implement the translation
+            var translationResultText = translateEnglishToGenz(text, json)
+            //replace genz textbox with result 
+            document.getElementById('genzText').textContent = translationResultText;
+        } else {
+            // Translate from Gen Z to English
+            // Implement the translation
+            var translationResultText = translateGenzToEnglish(text, json)
+            //replace genz textbox with result 
+            document.getElementById('englishText').textContent = translationResultText;
+        }
+    })
+    .catch(error => {
+        console.error('Error loading JSON file:', error);
+    });
+    
+    
 }
 
 function translateWebPage() {
     //
+    window.location.href = '.com';
+}
+
+function translateEnglishToGenz(text, json) {
+    //
+    let stringList = text.split(' ');
+    for (let i = 0; i < stringList.length; i++) {
+        let curr = stringList[i];
+        if (json[curr]){
+            stringList[i] = json[curr]
+        }
+    }
+
+    return stringList.join(' ')
+}
+
+function translateGenzToEnglish(text, json) {
+    
 }
