@@ -2,14 +2,15 @@ let translateToGenZ = true; // Default direction
 
 document.getElementById('switchDirectionBtn').addEventListener('click', function() {
     let btn = document.getElementById('switchDirectionBtn');
-    //change the state of the translation language
-    translateToGenZ = !translateToGenZ;
-    let isArrowRight = btn.innerHTML === "&#8594;" || btn.innerHTML === "→"; // Check if the arrow points right
-    btn.innerHTML = isArrowRight ? "&#8592;" : "&#8594;"; // Switch between right (→) and left (←) arrows
+    translateToGenZ = !translateToGenZ; // Correctly toggles the translation direction
+    let isArrowRight = btn.innerHTML === "&#8594;" || btn.innerHTML === "→";
+    btn.innerHTML = isArrowRight ? "&#8592;" : "&#8594;";
 });
 
 document.getElementById('translateBtn').addEventListener('click', function() {
-    var sourceText = document.getElementById('sourceText').value;
+    // Determine which text area to use based on the direction of translation
+    var sourceTextId = translateToGenZ ? 'englishText' : 'genzText';
+    var sourceText = document.getElementById(sourceTextId).value;
     translateText(sourceText, translateToGenZ);
 });
 
@@ -18,7 +19,6 @@ document.getElementById('translateWebPageBtn').addEventListener('click', functio
         chrome.tabs.sendMessage(tabs[0].id, {action: "translateWebPage"});
     });
 });
-
 
 function translateText(text, toGenZ) {
     if(toGenZ) {

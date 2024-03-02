@@ -27,11 +27,20 @@ body, html {
 
 
 #switchDirectionBtn {
-    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
 }
 
-#toggleTranslation:hover, #translateWebPageBtn {
+#translateWebPageBtn {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
@@ -49,29 +58,6 @@ body, html {
 
 /* Text */ 
 
-
-#sourceText {
-    width: calc(100% - 20px);
-    height: 60px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Rounded corners */
-    resize: none; /* Prevent resizing */
-}
-
-#translationResult{
-    width: calc(100% - 20px);
-    height: 60px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Rounded corners */
-    resize: none; /* Prevent resizing */
-}
-
 #container {
     display: flex;
     align-items: center;
@@ -85,7 +71,7 @@ body, html {
 
 textarea {
     width: calc(100% - 20px);
-    height: 60px;
+    height: 200px;
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
