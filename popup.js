@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 let translateToGenZ = true; // Default direction
 
 chrome.storage.local.get("selectedText", (data) => {
@@ -25,6 +27,8 @@ document.getElementById('translateWebPageBtn').addEventListener('click', functio
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {action: "translateWebPage"});
     });
+});
+
 });
 
 function translateText(text, toGenZ) {
