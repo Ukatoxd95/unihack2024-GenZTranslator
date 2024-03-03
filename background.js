@@ -12,7 +12,7 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
     chrome.storage.local.set({ selectedText: selectedText }, () => {
         // Open the popup window
         chrome.windows.create({
-            url: chrome.runtime.getURL("popup.html"),
+            url: chrome.runtime.getURL("popup2.html"),
             type: "popup",
             focused: true,
             width: 400,
@@ -23,4 +23,4 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
             console.error("Error opening popup:", error);
         });
     });
-});
+}); 
