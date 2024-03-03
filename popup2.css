@@ -1,7 +1,11 @@
 body, html {
-    width: 600px;
-    height: 600px;
+    /* width: 600px;
+    height: 600px; */
     font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
 }
 
 .toggle, .translator {
@@ -9,7 +13,7 @@ body, html {
 }
 
 #logoImage {
-    max-width: 50px; /* Set the maximum width to 200 pixels */
+    max-width: 80px; /* Set the maximum width to 200 pixels */
     height: auto; /* Maintain aspect ratio */
     top: 0;
     left: 50%;
@@ -54,7 +58,7 @@ body, html {
     margin-left: 5px; /* Increase margin for more separation between buttons */
     margin-right: 20px; /* Increase margin for more separation between buttons */
     cursor: pointer;
-    background-color: #ff8c9a; /* Green background */
+    background-color: #ff8c9a; /* Pink background */
     border: none;
     color: white;
     text-align: center;
@@ -85,11 +89,15 @@ body, html {
     background-color: #356380; /* Slightly darker color on click */
 }
 
+
 /* Text */ 
+
 #container {
     display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
 .text-box {
@@ -100,8 +108,8 @@ body, html {
 }
 
 textarea {
-    width: calc(100% - 20px);
-    height: 200px;
+    width: 400px;
+    height: 500px;
     margin-bottom: 10px;
     padding: 10px;
     box-sizing: border-box;
