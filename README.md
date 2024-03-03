@@ -1,12 +1,9 @@
 # unihack2024-GenZTranslator
 
-Gen Z Translator is a Google Chrome extension that translates text into Gen Z slang and phrases.
+## Description
+Gen Z Translator is a Google Chrome extension that translates normal text into Gen Z slang and phrases. 
 
 ## Installation
-
-You can install Gen Z Translator from the Chrome Web Store by [clicking here](https://chrome.google.com/webstore/detail/gen-z-translator/your-extension-id).
-
-OR 
 
 You can clone the repository and load the extension manually by following these steps: 
 
@@ -19,11 +16,14 @@ You can clone the repository and load the extension manually by following these 
 4. The extension should now be installed and ready to use, should just show up on the exntension bar. 
 
 5. ENJOY 
+
 ## Usage
 
-Once installed, simply click on the Gen Z Translator icon in your browser toolbar to translate text on any webpage into Gen Z slang.
+You can select the text you want to translate and right click to select "Translate to Gen Z" from the context menu. Just like what you can do with google translate. 
 
-or 
+## From the team 
+We hope you enjoy using our extension and have fun translating text into Gen Z slang.
 
-You can select the text you want to translate and right click to select "Translate to Gen Z" from the context menu.
+
+
 
