@@ -33,26 +33,34 @@ document.getElementById('translateWebPageBtn').addEventListener('click', functio
 
 function translateText(text, toGenZ) {
     // Get json data
-    fetch('./wordtranslation.json')
-    .then(response => response.json())
-    .then(json => {
-        if (toGenZ) {
-            // Translate from English to Gen Z
-            // Implement the translation
+    if (toGenZ) {
+        // Translate from English to Gen Z
+        // Implement the translation
+        fetch('./wordtranslation.json')
+        .then(response => response.json())
+        .then(json => {
             var translationResultText = translateEnglishToGenz(text, json)
             //replace genz textbox with result 
             document.getElementById('genzText').textContent = translationResultText;
-        } else {
+        })
+        .catch(error => {
+            console.error('Error loading JSON file:', error);
+        });
+    } else {
+        fetch('./wordtranslationreversed.json')
+        .then(response => response.json())
+        .then(json => {
             // Translate from Gen Z to English
             // Implement the translation
             var translationResultText = translateGenzToEnglish(text, json)
             //replace genz textbox with result 
             document.getElementById('englishText').textContent = translationResultText;
-        }
-    })
-    .catch(error => {
-        console.error('Error loading JSON file:', error);
-    });
+        })
+        .catch(error => {
+            console.error('Error loading JSON file:', error);
+        });
+    }
+    
     
 }
 
@@ -68,13 +76,25 @@ function translateEnglishToGenz(text, json) {
         if (newString.includes(key)){
             newString = newString.replaceAll(key, json[key])
             console.log(key)
-        }
-        
+        }   
     }
 
     return newString
 }
 
 function translateGenzToEnglish(text, json) {
-    
+    var newString = text.toLowerCase();
+
+    newString = newString.split(' ');
+    for (let i = 0; i < newString.length; i++) {
+        if (newString[i] in json) {
+            currValue = json[newString[i]]
+            let max = currValue.length
+            let randInt = Math.floor(Math.random() * max)
+            let newSubString = currValue[randInt]
+            newString[i] = newSubString
+        }
+    }
+
+    return newString.join(' ')
 }
