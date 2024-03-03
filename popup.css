@@ -1,6 +1,6 @@
 body, html {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     font-family: Arial, sans-serif;
 }
 
@@ -15,8 +15,8 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-
 }
+
 /* Buttons */
 #toggleTranslation, 
 #translateBtn {
