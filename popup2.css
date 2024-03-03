@@ -1,119 +1,120 @@
-body, html {
-    /* width: 600px;
+body,
+html {
+  /* width: 600px;
     height: 600px; */
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
 }
 
-.toggle, .translator {
-    margin: 10px;
+.toggle,
+.translator {
+  margin: 10px;
 }
 
 #logoImage {
-    max-width: 80px; /* Set the maximum width to 200 pixels */
-    height: auto; /* Maintain aspect ratio */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
+  max-width: 80px; /* Set the maximum width to 200 pixels */
+  height: auto; /* Maintain aspect ratio */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 /* Buttons */
-#toggleTranslation, 
+#toggleTranslation,
 #translateBtn {
-    width: calc(100% - 20px);
-    padding: 12px 20px; /* Increased padding for better visual appeal */
-    margin-bottom: 20px; /* Increased margin for more separation */
-    cursor: pointer;
-    background-color: #ff8c9a; /* Green background */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+  width: calc(100% - 20px);
+  padding: 12px 20px; /* Increased padding for better visual appeal */
+  margin-bottom: 20px; /* Increased margin for more separation */
+  cursor: pointer;
+  background-color: #ff8c9a; /* Green background */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
 }
 
 /* Hover effect */
-#toggleTranslation:hover, 
+#toggleTranslation:hover,
 #translateBtn:hover {
-    background-color: #d07680; /* Darker green on hover */
+  background-color: #d07680; /* Darker green on hover */
 }
 
 /* Active state effect */
-#toggleTranslation:active, 
+#toggleTranslation:active,
 #translateBtn:active {
-    background-color: #ff8c9a; /* Slightly darker green on click */
+  background-color: #ff8c9a; /* Slightly darker green on click */
 }
 
 #switchDirectionBtn {
-    padding: 10px 30px; /* Add more horizontal padding for better spacing */
-    margin-bottom: 20px; /* Increase margin for more separation between buttons */
-    margin-left: 5px; /* Increase margin for more separation between buttons */
-    margin-right: 20px; /* Increase margin for more separation between buttons */
-    cursor: pointer;
-    background-color: #ff8c9a; /* Pink background */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 10px 30px; /* Add more horizontal padding for better spacing */
+  margin-bottom: 20px; /* Increase margin for more separation between buttons */
+  margin-left: 5px; /* Increase margin for more separation between buttons */
+  margin-right: 20px; /* Increase margin for more separation between buttons */
+  cursor: pointer;
+  background-color: #ff8c9a; /* Pink background */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Hover effect */
 #switchDirectionBtn:hover {
-    background-color: #e67f8b; /* Darker green on hover */
+  background-color: #e67f8b; /* Darker green on hover */
 }
 
 /* Active state effect */
 #switchDirectionBtn:active {
-    background-color: #c8707a; /* Slightly darker green on click */
+  background-color: #c8707a; /* Slightly darker green on click */
 }
 
 /* Hover effect */
 #translateWebPageBtn:hover {
-    background-color: #3b749d; /* Darker color on hover */
+  background-color: #3b749d; /* Darker color on hover */
 }
 
 /* Active state effect */
 #translateWebPageBtn:active {
-    background-color: #356380; /* Slightly darker color on click */
+  background-color: #356380; /* Slightly darker color on click */
 }
 
-
-/* Text */ 
+/* Text */
 
 #container {
-    display: flex;
-    /* align-items: center;
+  display: flex;
+  /* align-items: center;
     justify-content: space-around; */
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-box {
-    margin-top: 40px; /* Adjust the value as needed */
-    top: 10;
-    display: flex;
-    flex-direction: column;
+  margin-top: 40px; /* Adjust the value as needed */
+  top: 10;
+  display: flex;
+  flex-direction: column;
 }
 
 textarea {
-    width: 400px;
-    height: 500px;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Rounded corners */
-    resize: none; /* Prevent resizing */
+  width: 400px;
+  height: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners */
+  resize: none; /* Prevent resizing */
 }
