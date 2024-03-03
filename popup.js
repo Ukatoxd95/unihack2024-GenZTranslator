@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var translateToGenZ = true; // Default direction
 
@@ -82,12 +84,13 @@ function translateGenzToEnglish(text, json) {
     // Checks if the key exists in the json file and replaces gen z slang with a random word
     newString = newString.split(' ');
     for (let i = 0; i < newString.length; i++) {
-        if (newString[i] in json) {
-            currValue = json[newString[i]]
+        filteredString = newString[i].replace(/[^a-zA-Z]+/g, '');
+        if (filteredString in json) {
+            currValue = json[filteredString]
             let max = currValue.length
             let randInt = Math.floor(Math.random() * max)
             let newSubString = currValue[randInt]
-            newString[i] = newSubString
+            newString[i] = newString[i].replace(filteredString, newSubString)
         }
     }
 
