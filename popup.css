@@ -75,23 +75,6 @@ body, html {
     background-color: #388e3c; /* Slightly darker green on click */
 }
 
-#translateWebPageBtn {
-    width: calc(100% - 20px); /* Adjusted width for better fit */
-    padding: 12px 20px; /* Increased padding for better visual appeal */
-    margin-bottom: 20px; /* Increased margin for more separation */
-    cursor: pointer;
-    background-color: #4c90af; /* Original background color */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
-}
-
 /* Hover effect */
 #translateWebPageBtn:hover {
     background-color: #3b749d; /* Darker color on hover */
