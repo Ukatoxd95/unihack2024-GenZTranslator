@@ -1,6 +1,6 @@
 {
-    "sus": ["oddly", "suspicious", "causing doubt", "untrustworthy", "unclear motives", "inconsistencies in their story", "lack of transparency", "strange"], 
-    "cap": ["lying", "not being truthful", "full of it", "exaggerating a story", "being fake", "untrustworthy statement", "blasting nonsense", "false"], 
+    "sus": ["oddly", "suspicious", "causing doubt", "untrustworthy", "unclear", "inconsistent", "not transparent", "strange"], 
+    "cap": ["lying", "not being truthful", "full of it", "exaggerating a story", "being fake", "untrustworthy", "blasting nonsense", "false"], 
     "lit": ["very exciting", "extremely enjoyable", "full of energy", "a lot of fun", "an awesome atmosphere", "extremely good", "hyped up", "good", "cool"], 
     "busted": ["caught doing something wrong", "in trouble", "caught red-handed", "exposed for wrongdoing", "found out"], 
     "cringe": ["embarrassing", "second-hand embarrassment", "awkward", "painful to watch", "makes you want to hide", "so awkward it's funny", "annoying"], 
